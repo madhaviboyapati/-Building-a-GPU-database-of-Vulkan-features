@@ -1,0 +1,25 @@
+runtime: python27
+api_version: 1
+threadsafe: true
+
+libraries:
+- name: jinja2
+  version: latest
+
+handlers:
+- url: /
+  script: home.app
+
+- url: /gpu
+  script: gpu.app
+
+- url: /compares
+  script: compares.app
+
+- url: /gpuFeatures
+  script: gpuFeatures.app
+
+- url: /main
+  script: main.app
+
+

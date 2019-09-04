@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+<form action="/main" method="post">
+<h1>Compares GPU features</h1>
+
+<select id="mySelect" onchange="myFunction()">
+
+  <option value="Nvidia GeForce RTX 2080 Ti">Nvidia GeForce RTX 2080 Ti</option>
+  <option value="features">Nvidia GeForce RTX 2080 Ti</option>
+  <option value="features">Nvidia GeForce RTX 2080 Ti</option>
+  <option value="features">Nvidia GeForce RTX 2080 Ti</option>
+</select>
+  <br><br>
+
+<input type="submit" value="Submit">
+
+
+<script>
+function myFunction() {
+  var x = document.getElementById("mySelect").value;
+  document.getElementById("demo").innerHTML = "You selected: " + x;
+}
+</script>
+
+</body>
+</html>
